@@ -13,13 +13,12 @@ models.Base.metadata.create_all(bind=engine)
 
 app = FastAPI(title="CareerCompass Backend")
 
+from config import CORS_ORIGINS
+
 # Configure CORS
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=[
-        "http://127.0.0.1:5500",
-        "http://localhost:5500"
-    ],
+    allow_origins=CORS_ORIGINS,
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],

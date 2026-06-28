@@ -1,3 +1,6 @@
+# Environment variables file
+.env
+
 # Python Virtual Environments
 venv/
 .venv/
