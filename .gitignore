@@ -1,0 +1,30 @@
+# Python Virtual Environments
+venv/
+.venv/
+env/
+ENV/
+
+# Python Cache & Bytecode
+**/__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# SQLite Database
+backend/career_compass.db
+
+# OS Artifacts
+.DS_Store
+Thumbs.db
+
+# IDE Files
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
+
+# Log Files
+*.log
