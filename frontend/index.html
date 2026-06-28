@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO Tags -->
+  <title>CareerCompass — Career Exploration for 12th Pass Students</title>
+  <meta name="description" content="Discover alternative, modern career paths after Class 12 in India. Find career roadmaps, college guidelines, and entrance exams beyond JEE/NEET.">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="./css/style.css">
+  
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+  <!-- Header Shell -->
+  <header>
+    <div class="header-container">
+      <a href="#home" class="logo">
+        <i data-lucide="compass"></i>
+        Career<span>Compass</span>
+      </a>
+      
+      <!-- Mobile hamburger trigger -->
+      <button class="mobile-toggle" aria-label="Toggle Menu">
+        <i data-lucide="menu"></i>
+      </button>
+
+      <!-- Desktop navigation links -->
+      <nav id="nav-menu">
+        <a href="#home" class="active">Home</a>
+        <a href="#explore">Find Careers</a>
+        <a href="#exams">Exams</a>
+        <a href="#colleges">Colleges</a>
+        <a href="#compare">Compare</a>
+        <a href="#about">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Dynamic Views Inject Container -->
+  <main id="view-container">
+    <!-- Loaded dynamically by main.js -->
+    <div style="text-align: center; padding: 5rem 1rem;">
+      <p style="font-size: 1.2rem; color: var(--text-secondary);">Initializing CareerCompass Dashboard...</p>
+    </div>
+  </main>
+
+  <!-- Global Modal for Career Details -->
+  <div class="modal-overlay" id="career-modal">
+    <div class="modal-content">
+      <button class="modal-close-btn" onclick="closeCareerModal()" aria-label="Close details">
+        <i data-lucide="x"></i>
+      </button>
+      <div class="modal-body" id="modal-details-root">
+        <!-- Rendered by main.js showCareerModal() -->
+      </div>
+    </div>
+  </div>
+  <!-- Footer Shell -->
+  <footer>
+    <div class="footer-container">
+      <a href="#home" class="footer-logo">
+        Career<span>Compass</span>
+      </a>
+      <p class="footer-copy">&copy; 2026 CareerCompass India. Empowering students to build their own futures.</p>
+      <div class="footer-links">
+        <a href="#explore">Find Paths</a>
+        <a href="#exams">Exams Info</a>
+        <a href="#colleges">Colleges</a>
+        <a href="#compare">Compare</a>
+        <a href="#about">Our Mission</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Application JS Modules -->
+  <script src="./js/data.js"></script>
+  <script src="./js/main.js"></script>
+
+  
+</body>
+</html>
